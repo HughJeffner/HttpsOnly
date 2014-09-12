@@ -151,7 +151,7 @@ Public Class HttpsOnlyModule
             End Get
         End Property
 
-        <ConfigurationProperty("hstsMaxAge", DefaultValue:=3600, IsRequired:=False)> _
+        <ConfigurationProperty("hstsMaxAge", DefaultValue:=31536000, IsRequired:=False)> _
         Public ReadOnly Property HSTSMaxAge() As Integer
             Get
                 Return Integer.Parse(Me("hstsMaxAge"))
